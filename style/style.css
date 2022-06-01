@@ -38,7 +38,7 @@
 
 .body--small {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.400000006px;
 }
 .body--small .grid__item:nth-child(1) {
@@ -55,7 +55,7 @@
 }
 .body--medium {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.25px;
 }
 .body--medium .grid__item:nth-child(1) {
@@ -72,7 +72,7 @@
 }
 .body--large {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.5px;
 }
 .body--large .grid__item:nth-child(1) {
@@ -87,7 +87,7 @@
 
 .label--small {
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 .label--small .grid__item:nth-child(1) {
@@ -104,7 +104,7 @@
 }
 .label--medium {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 .label--medium .grid__item:nth-child(1) {
@@ -118,7 +118,7 @@
 }
 .label--large {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.1px;
 }
 .label--large .grid__item:nth-child(1) {
@@ -136,7 +136,7 @@
 
 .title--small {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.1px;
 }
 .title--small .grid__item:nth-child(1) {
@@ -153,7 +153,7 @@
 }
 .title--medium {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.1px;
 }
 .title--medium .grid__item:nth-child(1) {
@@ -167,7 +167,7 @@
 }
 .title--large {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0em;
 }
 .title--large .grid__item:nth-child(1) {
@@ -188,7 +188,7 @@
 
 .headline--small {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0em;
 }
 .headline--small .grid__item:nth-child(1) {
@@ -205,7 +205,7 @@
 }
 .headline--medium {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0em;
 }
 .headline--medium .grid__item:nth-child(1) {
@@ -222,7 +222,7 @@
 }
 .headline--large {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
 }
 .headline--large .grid__item:nth-child(1) {
@@ -240,7 +240,7 @@
 
 .display--small {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0em;
 }
 .display--small .grid__item:nth-child(1) {
@@ -260,7 +260,7 @@
 }
 .display--medium {
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0em;
 }
 .display--medium .grid__item:nth-child(1) {
@@ -283,7 +283,7 @@
 }
 .display--large {
   font-size: 57px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.25px;
 }
 .display--large .grid__item:nth-child(1) {
