@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+  background-color: black;
+  color: black;
+}
+
+.dim {
+  color: #eee;
+}
+
+.sample {
+  margin-inline: auto;
+  padding: 56px;
+  max-width: 960px;
+  background-color: white;
+  margin-bottom: 50vh;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__item {
+    user-select: none;
+  }
+}
+
+.body {
+  &--small {
+    $font-size: 12px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0.4000000059604645px;
+    .grid__item:nth-child(1) {
+      line-height: 16px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 20px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--medium {
+    $font-size: 14px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    .grid__item:nth-child(1) {
+      line-height: 20px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 24px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--large {
+    $font-size: 16px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    .grid__item:nth-child(1) {
+      line-height: 24px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+}
+
+.label {
+  &--small {
+    $font-size: 11px;
+    font-size: $font-size;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    .grid__item:nth-child(1) {
+      line-height: 16px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 20px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--medium {
+    $font-size: 12px;
+    font-size: $font-size;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    .grid__item:nth-child(1) {
+      line-height: 16px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--large {
+    $font-size: 14px;
+    font-size: $font-size;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    .grid__item:nth-child(1) {
+      line-height: 20px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 24px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+}
+
+.title {
+  &--small {
+    $font-size: 14px;
+    font-size: $font-size;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    .grid__item:nth-child(1) {
+      line-height: 20px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 24px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--medium {
+    $font-size: 16px;
+    font-size: $font-size;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    .grid__item:nth-child(1) {
+      line-height: 24px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--large {
+    $font-size: 22px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0em;
+    .grid__item:nth-child(1) {
+      line-height: 28px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 32px;
+    }
+    .grid__item:nth-child(3) {
+      line-height: 36px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+}
+
+.headline {
+  &--small {
+    $font-size: 24px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0em;
+    .grid__item:nth-child(1) {
+      line-height: 32px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 36px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--medium {
+    $font-size: 28px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0em;
+    .grid__item:nth-child(1) {
+      line-height: 36px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 40px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--large {
+    $font-size: 32px;
+    font-size: $font-size;
+    font-weight: 400;
+    text-align: left;
+    .grid__item:nth-child(1) {
+      line-height: 40px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 44px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+}
+
+.display {
+  &--small {
+    $font-size: 36px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0em;
+    .grid__item:nth-child(1) {
+      line-height: 44px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 48px;
+    }
+    .grid__item:nth-child(3) {
+      line-height: 52px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--medium {
+    $font-size: 45px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: 0em;
+    .grid__item:nth-child(1) {
+      line-height: 52px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 56px;
+    }
+    .grid__item:nth-child(3) {
+      line-height: 60px;
+    }
+    .grid__item:nth-child(4) {
+      line-height: 60px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+  &--large {
+    $font-size: 57px;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    .grid__item:nth-child(1) {
+      line-height: 64px;
+    }
+    .grid__item:nth-child(2) {
+      line-height: 68px;
+    }
+    .grid__item:nth-child(3) {
+      line-height: 72px;
+    }
+    .grid__item:nth-child(4) {
+      line-height: 76px;
+    }
+    .grid__item:nth-child(5) {
+      line-height: 80px;
+    }
+    .grid__item:nth-child(5) {
+      line-height: 84px;
+    }
+    .titleText {
+      margin-bottom: $font-size * 3;
+    }
+    .grid {
+      gap: $font-size * 3;
+    }
+  }
+}
+
+.small {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .small {
+    display: block;
+  }
+
+  .medium {
+    display: block;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .sample {
+    padding: 24px;
+  }
+}
