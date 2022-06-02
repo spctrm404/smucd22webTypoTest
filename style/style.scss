@@ -35,15 +35,26 @@
 
 .body {
   &--small {
+    $line-height-begin: 16px;
     $font-size: 12px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.4000000059604645px;
-    .grid__item:nth-child(1) {
-      line-height: 16px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 20px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -53,15 +64,26 @@
     }
   }
   &--medium {
+    $line-height-begin: 20px;
     $font-size: 14px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.25px;
-    .grid__item:nth-child(1) {
-      line-height: 20px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 24px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -71,12 +93,26 @@
     }
   }
   &--large {
+    $line-height-begin: 24px;
     $font-size: 16px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.5px;
-    .grid__item:nth-child(1) {
-      line-height: 24px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -89,15 +125,26 @@
 
 .label {
   &--small {
+    $line-height-begin: 16px;
     $font-size: 11px;
     font-size: $font-size;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.5px;
-    .grid__item:nth-child(1) {
-      line-height: 16px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 20px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -107,12 +154,26 @@
     }
   }
   &--medium {
+    $line-height-begin: 16px;
     $font-size: 12px;
     font-size: $font-size;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.5px;
-    .grid__item:nth-child(1) {
-      line-height: 16px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -122,15 +183,26 @@
     }
   }
   &--large {
+    $line-height-begin: 20px;
     $font-size: 14px;
     font-size: $font-size;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.1px;
-    .grid__item:nth-child(1) {
-      line-height: 20px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 24px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -143,15 +215,26 @@
 
 .title {
   &--small {
+    $line-height-begin: 20px;
     $font-size: 14px;
     font-size: $font-size;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.1px;
-    .grid__item:nth-child(1) {
-      line-height: 20px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 24px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -161,12 +244,26 @@
     }
   }
   &--medium {
+    $line-height-begin: 24px;
     $font-size: 16px;
     font-size: $font-size;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.1px;
-    .grid__item:nth-child(1) {
-      line-height: 24px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -176,18 +273,26 @@
     }
   }
   &--large {
+    $line-height-begin: 28px;
     $font-size: 22px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0em;
-    .grid__item:nth-child(1) {
-      line-height: 28px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 32px;
-    }
-    .grid__item:nth-child(3) {
-      line-height: 36px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -200,15 +305,26 @@
 
 .headline {
   &--small {
+    $line-height-begin: 32px;
     $font-size: 24px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0em;
-    .grid__item:nth-child(1) {
-      line-height: 32px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 36px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -218,15 +334,26 @@
     }
   }
   &--medium {
+    $line-height-begin: 36px;
     $font-size: 28px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0em;
-    .grid__item:nth-child(1) {
-      line-height: 36px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 40px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -236,15 +363,26 @@
     }
   }
   &--large {
+    $line-height-begin: 40px;
     $font-size: 32px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
-    .grid__item:nth-child(1) {
-      line-height: 40px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 44px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -257,18 +395,26 @@
 
 .display {
   &--small {
+    $line-height-begin: 44px;
     $font-size: 36px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0em;
-    .grid__item:nth-child(1) {
-      line-height: 44px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 48px;
-    }
-    .grid__item:nth-child(3) {
-      line-height: 52px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -278,21 +424,26 @@
     }
   }
   &--medium {
+    $line-height-begin: 52px;
     $font-size: 45px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0em;
-    .grid__item:nth-child(1) {
-      line-height: 52px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 56px;
-    }
-    .grid__item:nth-child(3) {
-      line-height: 60px;
-    }
-    .grid__item:nth-child(4) {
-      line-height: 60px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
@@ -302,27 +453,26 @@
     }
   }
   &--large {
+    $line-height-begin: 64px;
     $font-size: 57px;
     font-size: $font-size;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.25px;
-    .grid__item:nth-child(1) {
-      line-height: 64px;
-    }
-    .grid__item:nth-child(2) {
-      line-height: 68px;
-    }
-    .grid__item:nth-child(3) {
-      line-height: 72px;
-    }
-    .grid__item:nth-child(4) {
-      line-height: 76px;
-    }
-    .grid__item:nth-child(5) {
-      line-height: 80px;
-    }
-    .grid__item:nth-child(5) {
-      line-height: 84px;
+    @for $i from 1 through 16 {
+      .grid__item:nth-child(#{$i}) {
+        $line-height: 2px * ($i - 1) + $line-height-begin;
+        line-height: $line-height;
+        &::before {
+          $text: $i +
+            ": " +
+            $font-size +
+            " / " +
+            $line-height +
+            " / " +
+            calc($line-height / $font-size);
+          content: $text;
+        }
+      }
     }
     .titleText {
       margin-bottom: $font-size * 3;
